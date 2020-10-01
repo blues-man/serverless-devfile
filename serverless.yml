@@ -1,0 +1,9 @@
+name: knative-express-starter
+component: knative
+description: Deploys a serverless knative express app
+keywords: serverless, knative, express
+repo: https://github.com/serverless-components/knative
+license: MIT
+
+inputs:
+  src: ./src
