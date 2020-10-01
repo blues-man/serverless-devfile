@@ -4,7 +4,7 @@ metadata:
   generateName: nodejs-
 projects:
   -
-    name: serverless-knative-
+    name: serverless-knative
     source:
       type: git
       location: "https://github.com/openshift-labs/serverless-devfile.git"
@@ -32,14 +32,14 @@ commands:
       - type: exec
         component: nodejs
         command: npm install
-        workdir: ${CHE_PROJECTS_ROOT}/src
+        workdir: ${CHE_PROJECTS_ROOT}/serverless-knative/src
   -
     name: run the web app
     actions:
       - type: exec
         component: nodejs
         command: nodemon app.js
-        workdir: ${CHE_PROJECTS_ROOT}/src
+        workdir: ${CHE_PROJECTS_ROOT}/serverless-knative/src
   -
     name: run the web app (debugging enabled)
     actions:
@@ -81,5 +81,5 @@ commands:
       - type: exec
         component: nodejs
         command: serverless deploy --verbose --debug
-        workdir: ${CHE_PROJECTS_ROOT}
+        workdir: ${CHE_PROJECTS_ROOT}/serverless-knative
 
