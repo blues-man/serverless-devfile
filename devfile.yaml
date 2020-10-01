@@ -4,10 +4,10 @@ metadata:
   generateName: nodejs-
 projects:
   -
-    name: nodejs-web-app
+    name: serverless-knative-
     source:
       type: git
-      location: "https://github.com/che-samples/web-nodejs-sample.git"
+      location: "https://github.com/openshift-labs/serverless-devfile.git"
 components:
   -
     type: chePlugin
@@ -32,21 +32,21 @@ commands:
       - type: exec
         component: nodejs
         command: npm install
-        workdir: ${CHE_PROJECTS_ROOT}/nodejs-web-app/app
+        workdir: ${CHE_PROJECTS_ROOT}/src
   -
     name: run the web app
     actions:
       - type: exec
         component: nodejs
         command: nodemon app.js
-        workdir: ${CHE_PROJECTS_ROOT}/nodejs-web-app/app
+        workdir: ${CHE_PROJECTS_ROOT}/src
   -
     name: run the web app (debugging enabled)
     actions:
       - type: exec
         component: nodejs
         command: nodemon --inspect app.js
-        workdir: ${CHE_PROJECTS_ROOT}/nodejs-web-app/app
+        workdir: ${CHE_PROJECTS_ROOT}/src
   -
     name: stop the web app
     actions:
@@ -75,3 +75,11 @@ commands:
             }
           ]
         }
+  -
+    name: Deploy function
+    actions:
+      - type: exec
+        component: nodejs
+        command: serverless deploy --verbose --debug
+        workdir: ${CHE_PROJECTS_ROOT}
+
