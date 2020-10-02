@@ -28,5 +28,5 @@ Populate the `.env` file with your cluster info:
 
 Code, build, test and deploy your Function as scale-to-zero app directly from [Eclipse Che](https://www.eclipse.org/che/) in-browser IDE:
 
-[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://che.openshift.io/f?url=https://github.com/openshift-labs/serverless-devfile/)
+[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://codeready-openshift-workspaces.redhat-24238722-f5541308b177087861a229b886140c95-0000.us-east.containers.appdomain.cloud/f?url=https://github.com/openshift-labs/serverless-devfile/)
 
