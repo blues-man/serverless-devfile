@@ -26,13 +26,9 @@ Populate the `.env` file with your cluster info:
 * **KUBERNETES_SERVICE_ACCOUNT_TOKEN**: get your k8s user serviceaccount token (e.g. in OpenShift `oc whoami -t`) 
 * **KUBERNETES_SKIP_TLS_VERIFY**: skip TLS verification if you are not using trusted certificates for API (e.g. true)
 
-## Run
-
-```
-$ serverless deploy
-```
-
 ## Run in Eclipse Che!
+
+Code, build, test and deploy your Function as scale-to-zero app directly from [Eclipse Che](https://www.eclipse.org/che/) in-browser IDE:
 
 [![Contribute](https://www.eclipse.org/che/contribute.svg)](https://che.openshift.io/f?url=https://github.com/openshift-labs/serverless-devfile/)
 
