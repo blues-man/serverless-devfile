@@ -76,10 +76,21 @@ commands:
           ]
         }
   -
-    name: Deploy function
+    name: Deploy Function
     actions:
       - type: exec
         component: nodejs
-        command: serverless deploy --verbose --debug
+        command: >-
+                  read -p 'Enter your serverless.com ACCESS_KEY:' access_key;
+                  export SERVERLESS_ACCESS_KEY=$access_key;
+                  set -o xtrace;
+                  serverless deploy --verbose --debug
+        workdir: ${CHE_PROJECTS_ROOT}/serverless-knative
+  -
+    name: Serverless.com Login
+    actions:
+      - type: exec
+        component: nodejs
+        command:  serverless login
         workdir: ${CHE_PROJECTS_ROOT}/serverless-knative
 
