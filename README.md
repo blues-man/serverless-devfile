@@ -29,6 +29,12 @@ if you are using it on Kubernetes, a [Docker Hub](https://hub.docker.com) accoun
 * DOCKER_USERNAME: Docker Hub username
 * DOCKER_PASSWORD: Docker Hub password
 
+### serverless.yml
+
+Update the org property in the serverless.yml file with the name of your serverless.com account.
+
+* org: <your_org>
+
 ## Run in Eclipse Che!
 
 Code, build, test and deploy your Function as scale-to-zero app directly from [Eclipse Che](https://www.eclipse.org/che/) in-browser IDE:
