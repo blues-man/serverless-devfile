@@ -86,6 +86,7 @@ commands:
         command: >-
                   read -p 'Enter your serverless.com ACCESS_KEY:' access_key;
                   export SERVERLESS_ACCESS_KEY=$access_key;
+                  unset KUBERNETES_PORT;
                   set -o xtrace;
                   serverless deploy --verbose --debug
         workdir: ${CHE_PROJECTS_ROOT}/serverless-knative
