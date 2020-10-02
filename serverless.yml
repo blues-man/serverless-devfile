@@ -5,5 +5,7 @@ keywords: serverless, knative, express
 repo: https://github.com/serverless-components/knative
 license: MIT
 
+org: <YOUR_SLS_ORG>
+
 inputs:
   src: ./src
