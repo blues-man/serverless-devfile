@@ -20,6 +20,9 @@ components:
     type: dockerimage
     alias: nodejs
     image: quay.io/osevg/che-nodejs10-serverless-ubi:latest
+    volumes:
+      - name: workaround
+        containerPath: /tmp
     memoryLimit: 512Mi
     endpoints:
       - name: 'nodejs'
