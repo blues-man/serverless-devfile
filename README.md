@@ -7,7 +7,7 @@ This demo will setup an env on Eclipse Che to code, build and run a Function on 
 
 ### Serverless.com
 
-Serverless.com components requires a login at [Serverless.com](https://serverless.com).
+Serverless.com components require a login at [Serverless.com](https://serverless.com).
 
 From Dashboard, Create an *Access Key*, we will use it for Deploying the function: `https://app.serverless.com/<YOUR_USER>/settings/accessKeys`
 
