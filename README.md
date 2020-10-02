@@ -24,6 +24,11 @@ Populate the `.env` file with your cluster info:
 * KUBERNETES_SERVICE_ACCOUNT_TOKEN: get your k8s user serviceaccount token (e.g. in OpenShift `oc whoami -t`) 
 * KUBERNETES_SKIP_TLS_VERIFY: skip TLS verification if you are not using trusted certificates for API (e.g. true)
 
+if you are using it on Kubernetes, a [Docker Hub](https://hub.docker.com) account is required. Add these credentials to the `.env` file then:
+
+* DOCKER_USERNAME: Docker Hub username
+* DOCKER_PASSWORD: Docker Hub password
+
 ## Run in Eclipse Che!
 
 Code, build, test and deploy your Function as scale-to-zero app directly from [Eclipse Che](https://www.eclipse.org/che/) in-browser IDE:
