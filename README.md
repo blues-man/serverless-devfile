@@ -9,7 +9,7 @@ This demo will setup an env on Eclipse Che to code, build and run a Function on 
 
 Serverless.com components require a login at [Serverless.com](https://serverless.com).
 
-From Dashboard, Create an *Access Key*, we will use it for Deploying the function: `https://app.serverless.com/<YOUR_USER>/settings/accessKeys`
+From Dashboard, Create an *Access Key*, we will use it for Deploying the function: `https://app.serverless.com/<YOUR_ORG>/settings/accessKeys`
 
 ### Knative
 
@@ -33,7 +33,7 @@ if you are using it on Kubernetes, a [Docker Hub](https://hub.docker.com) accoun
 
 Update the org property in the serverless.yml file with the name of your serverless.com account.
 
-* org: <your_org>
+* org: Your Organization/User at https://app.serverless.com/ 
 
 ## Run in Eclipse Che!
 
