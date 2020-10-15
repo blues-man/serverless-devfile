@@ -1,4 +1,4 @@
-# NodeJS fuction for Serverless.com Knative Component demo
+# NodeJS function for Serverless.com Knative Component demo
 
 This demo will setup an env on Eclipse Che to code, build and run a Function on your [Kubernetes](https://kubernetes.io) and [OpenShift](https://openshift.com) cluster using [Knative](https://knative.dev/) and  [Serverless.com components](https://www.serverless.com/components/). Components give the possiblity of delegating the build phase to the cluster, so that can be done for you by *Kaniko* or *Source-to-Image* when using [Knative Component](https://github.com/serverless-components/knative/).
 
